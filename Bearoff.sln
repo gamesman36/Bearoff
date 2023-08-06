@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bearoff", "Bearoff\Bearoff.csproj", "{370A0BCC-4E15-4785-B65D-60E99056DAC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{370A0BCC-4E15-4785-B65D-60E99056DAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370A0BCC-4E15-4785-B65D-60E99056DAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370A0BCC-4E15-4785-B65D-60E99056DAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370A0BCC-4E15-4785-B65D-60E99056DAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C09220A-C9B7-4092-9100-F00E79D4FDF2}
+	EndGlobalSection
+EndGlobal
