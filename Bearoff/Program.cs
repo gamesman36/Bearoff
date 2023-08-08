@@ -11,6 +11,10 @@
             checkerCounts = CreateBoard(checkerCounts);
             ShowRolledDice(die1, die2);
             var board = new Homeboard(checkerCounts);
+            var moveList = ShowMoveList(die1, die2);
+            Console.Write("Numbers to move: ");
+            string spaced = string.Join(" ", moveList);
+            Console.WriteLine(spaced);
         }
 
         static void ShowRolledDice(Die die1, Die die2)
@@ -23,6 +27,27 @@
                 : $"{roll2}-{roll1}";
 
             Console.WriteLine($"The roll is {rollString}.");
+        }
+
+        static List<int> ShowMoveList(Die die1, Die die2)
+        {
+            var moveList = new List<int>();
+
+            if (die1.ShowRoll() != die2.ShowRoll())
+            {
+                moveList.Add(die1.ShowRoll());
+                moveList.Add(die2.ShowRoll());
+            }
+
+            else
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    moveList.Add(die1.ShowRoll());
+                }
+            }
+
+            return moveList;
         }
 
         static List<int> CreateBoard(List<int> checkerCounts)
